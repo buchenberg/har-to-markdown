@@ -1,9 +1,8 @@
 (function () {
-  "use strict";
+  'use strict';
 
   const _ = require('lodash');
   const fs = require('fs');
-  const path = require('path');
   const StringBuilder = require('stringbuilder');
   const mdu = require('markdown-utils');
   const sb = new StringBuilder({ newline: '\n' });
@@ -78,7 +77,7 @@
       if (!err) {
         har2md.convert(data);
       } else {
-        console.log(err);
+        throw err;
       }
     });
   }
