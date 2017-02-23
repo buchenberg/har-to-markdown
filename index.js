@@ -7,7 +7,6 @@
   const mdu = require('markdown-utils');
   const sb = new StringBuilder({ newline: '\n' });
   const internals = {};
-  const har2md = {};
 
   internals.header = function () {
     let sbHeader = new StringBuilder({ newline: '\n' });
@@ -16,12 +15,24 @@
     return sbHeader;
   };
 
+  internals.parseEntry = function (entry) {
+    let sbEntry = new StringBuilder({ newline: '\n' });
+    sbEntry.appendLine(mdu.h2('Entry'))
+        .appendLine()
+        .appendLine(entry.startedDateTime)
+        .appendLine()
+        .append(internals.parseRequest(entry.request))
+        .appendLine()
+        .append(internals.parseResponse(entry.response));
+    return sbEntry;
+  };
+
   internals.parseRequest = function (request) {
     let sbRequest = new StringBuilder({ newline: '\n' });
-    
+
     sbRequest.appendLine(mdu.h3('Request'))
         .appendLine();
-   
+
     sbRequest.appendLine(`${request.method} ${request.url}`)
         .appendLine();
 
@@ -50,21 +61,9 @@
     return sbResponse;
   };
 
-  internals.parseEntry = function (entry) {
-    let sbEntry = new StringBuilder({ newline: '\n' });
-    sbEntry.appendLine(mdu.h2('Entry'))
-        .appendLine()
-        .appendLine(entry.startedDateTime)
-        .appendLine()
-        .append(internals.parseRequest(entry.request))
-        .appendLine()
-        .append(internals.parseResponse(entry.response));
-    return sbEntry;
-  };
-
-  exports.convert = har2md.convert = function (data) {
-    sb.append(internals.header());
+  exports.convert = function (data) {
     let har = JSON.parse(data);
+    sb.append(internals.header());
     _.each(har.log.entries, function (entry) {
       sb.append(internals.parseEntry(entry));
     });
@@ -75,7 +74,7 @@
   if (!module.parent) {
     fs.readFile(process.argv[2], { encoding: 'utf-8' }, function (err, data) {
       if (!err) {
-        har2md.convert(data);
+        exports.convert(data);
       } else {
         throw err;
       }
