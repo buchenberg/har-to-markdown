@@ -1,0 +1,709 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2017-02-23T02:18:11.504Z",
+        "id": "page_2",
+        "title": "http://localhost:3000/projects",
+        "pageTimings": {
+          "onContentLoad": 1326.734000002034,
+          "onLoad": 1494.7270000120625
+        }
+      }
+    ],
+    "entries": [
+      {
+        "startedDateTime": "2017-02-23T02:18:12.876Z",
+        "time": 11.830999981611967,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/api/projects",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:3000/projects"
+            },
+            {
+              "name": "Cookie",
+              "value": "sessionId=s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "sessionId",
+              "value": "s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 496,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=15778476; includeSubDomains"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 23 Feb 2017 02:18:12 GMT"
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Length",
+              "value": "241"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"f1-VFw8ZV0jTgJDtXtXxfcK+A\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 241,
+            "mimeType": "application/json",
+            "compression": 0,
+            "text": "[{\"_id\":\"587db6e43bbea32e008ed2cb\",\"user\":\"587db6ca3bbea32e008ed2ca\",\"__v\":2,\"hars\":[\"587db70f3bbea32e008ed2cc\",\"589e881bd650da2b00f3fded\"],\"description\":\"This is a test project.\",\"title\":\"Test Project\",\"created\":\"2017-01-17T06:17:08.528Z\"}]"
+          },
+          "redirectURL": "",
+          "headersSize": 395,
+          "bodySize": 241,
+          "_transferSize": 636
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.89100002171472,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.08500000694765997,
+          "wait": 9.42299998132512,
+          "receive": 0.43199997162446735,
+          "ssl": -1
+        },
+        "serverIPAddress": "127.0.0.1",
+        "connection": "30758",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2017-02-23T02:18:18.306Z",
+        "time": 66.49699999252334,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/api/projects/587db6e43bbea32e008ed2cb",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:3000/projects"
+            },
+            {
+              "name": "Cookie",
+              "value": "sessionId=s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "sessionId",
+              "value": "s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 478,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=15778476; includeSubDomains"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 23 Feb 2017 02:18:18 GMT"
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Length",
+              "value": "328"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"148-mfU7DO7FCYfqduO8D/Z/6Q\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 328,
+            "mimeType": "application/json",
+            "compression": 0,
+            "text": "{\"_id\":\"587db6e43bbea32e008ed2cb\",\"user\":{\"_id\":\"587db6ca3bbea32e008ed2ca\",\"displayName\":\"greg bn\"},\"__v\":2,\"hars\":[{\"_id\":\"587db70f3bbea32e008ed2cc\",\"name\":\"localhost.har\"},{\"_id\":\"589e881bd650da2b00f3fded\",\"name\":\"har.json\"}],\"description\":\"This is a test project.\",\"title\":\"Test Project\",\"created\":\"2017-01-17T06:17:08.528Z\"}"
+          },
+          "redirectURL": "",
+          "headersSize": 396,
+          "bodySize": 328,
+          "_transferSize": 724
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.71499996213242,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.11100003030152017,
+          "wait": 25.70900000864636,
+          "receive": 38.961999991443044,
+          "ssl": -1
+        },
+        "serverIPAddress": "127.0.0.1",
+        "connection": "30758",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2017-02-23T02:18:18.357Z",
+        "time": 25.553999992553145,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/api/projects/587db6e43bbea32e008ed2cb/hars?reportType=url",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:3000/projects/587db6e43bbea32e008ed2cb"
+            },
+            {
+              "name": "Cookie",
+              "value": "sessionId=s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "reportType",
+              "value": "url"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "sessionId",
+              "value": "s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 523,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=15778476; includeSubDomains"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 23 Feb 2017 02:18:18 GMT"
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Length",
+              "value": "263"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"107-R/jGITL6GzjXrjVYEhkz+w\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 263,
+            "mimeType": "application/json",
+            "compression": 0,
+            "text": "[{\"requests\":[{\"path\":\"http://localhost:3000/api/projects\",\"verb\":\"GET\"},{\"path\":\"http://localhost:3000/api/projects/587db6e43bbea32e008ed2cb\",\"verb\":\"GET\"},{\"path\":\"http://localhost:3000/api/projects/587db6e43bbea32e008ed2cb/hars?reportType=url\",\"verb\":\"GET\"}]}]"
+          },
+          "redirectURL": "",
+          "headersSize": 396,
+          "bodySize": 263,
+          "_transferSize": 659
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.30499998340383,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.06799999391660005,
+          "wait": 23.45000003697347,
+          "receive": 0.7309999782592449,
+          "ssl": -1
+        },
+        "serverIPAddress": "127.0.0.1",
+        "connection": "30753",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2017-02-23T02:18:30.445Z",
+        "time": 23.771999985910952,
+        "request": {
+          "method": "GET",
+          "url": "http://localhost:3000/api/hars/587db70f3bbea32e008ed2cc",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, sdch, br"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:3000/projects/587db6e43bbea32e008ed2cb"
+            },
+            {
+              "name": "Cookie",
+              "value": "sessionId=s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "sessionId",
+              "value": "s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 499,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=15778476; includeSubDomains"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"a7e-rRXJXPXY9+t7Nz/rwi7LwA\""
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 23 Feb 2017 02:18:30 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2686,
+            "mimeType": "application/json",
+            "compression": 1386,
+            "text": "{\"_id\":\"587db70f3bbea32e008ed2cc\",\"user\":{\"_id\":\"587db6ca3bbea32e008ed2ca\",\"displayName\":\"greg bn\"},\"log\":{\"version\":\"1.2\",\"creator\":{\"name\":\"WebInspector\",\"version\":\"537.36\"},\"pages\":[],\"entries\":[{\"startedDateTime\":\"2017-01-17T06:17:27.992Z\",\"time\":58.42800000027637,\"request\":{\"method\":\"GET\",\"url\":\"http://localhost:3000/api/projects\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Accept-Encoding\",\"value\":\"gzip, deflate, sdch, br\"},{\"name\":\"Host\",\"value\":\"localhost:3000\"},{\"name\":\"Accept-Language\",\"value\":\"en-US,en;q=0.8\"},{\"name\":\"User-Agent\",\"value\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\"},{\"name\":\"Accept\",\"value\":\"application/json, text/plain, */*\"},{\"name\":\"Referer\",\"value\":\"http://localhost:3000/projects/587db6e43bbea32e008ed2cb\"},{\"name\":\"Cookie\",\"value\":\"_ga=GA1.1.871926037.1484628474; sessionId=s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"}],\"queryString\":[],\"cookies\":[{\"name\":\"_ga\",\"value\":\"GA1.1.871926037.1484628474\",\"expires\":null,\"httpOnly\":false,\"secure\":false},{\"name\":\"sessionId\",\"value\":\"s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\",\"expires\":null,\"httpOnly\":false,\"secure\":false}],\"headersSize\":514,\"bodySize\":0},\"response\":{\"status\":200,\"statusText\":\"OK\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Strict-Transport-Security\",\"value\":\"max-age=15778476; includeSubDomains\"},{\"name\":\"X-Content-Type-Options\",\"value\":\"nosniff\"},{\"name\":\"Date\",\"value\":\"Tue, 17 Jan 2017 06:17:28 GMT\"},{\"name\":\"X-Download-Options\",\"value\":\"noopen\"},{\"name\":\"X-Frame-Options\",\"value\":\"SAMEORIGIN\"},{\"name\":\"Content-Type\",\"value\":\"application/json; charset=utf-8\"},{\"name\":\"X-XSS-Protection\",\"value\":\"1; mode=block\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"},{\"name\":\"Vary\",\"value\":\"Accept-Encoding\"},{\"name\":\"Content-Length\",\"value\":\"188\"},{\"name\":\"ETag\",\"value\":\"W/\\\"bc-o9C6apBgHCqQWORVcF0PyQ\\\"\"}],\"cookies\":[],\"content\":{\"size\":188,\"mimeType\":\"application/json\",\"compression\":0,\"text\":\"[{\\\"_id\\\":\\\"587db6e43bbea32e008ed2cb\\\",\\\"user\\\":\\\"587db6ca3bbea32e008ed2ca\\\",\\\"__v\\\":0,\\\"hars\\\":[],\\\"description\\\":\\\"This is a test project.\\\",\\\"title\\\":\\\"Test Project\\\",\\\"created\\\":\\\"2017-01-17T06:17:08.528Z\\\"}]\"},\"redirectURL\":\"\",\"headersSize\":395,\"bodySize\":188,\"_transferSize\":583},\"timings\":{\"blocked\":1.48900000021968,\"dns\":-1,\"connect\":-1,\"send\":0.09099999988393015,\"wait\":18.60300000043939,\"receive\":38.244999999733366,\"ssl\":-1},\"serverIPAddress\":\"127.0.0.1\",\"connection\":\"31950\"}]},\"__v\":0,\"specs\":[],\"created\":\"2017-01-17T06:17:51.943Z\",\"name\":\"localhost.har\",\"isCurrentUserOwner\":true}"
+          },
+          "redirectURL": "",
+          "headersSize": 427,
+          "bodySize": 1300,
+          "_transferSize": 1727
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.63399998564273,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.11700001778080993,
+          "wait": 21.366000000853063,
+          "receive": 0.6549999816343508,
+          "ssl": -1
+        },
+        "serverIPAddress": "127.0.0.1",
+        "connection": "30753",
+        "pageref": "page_2"
+      },
+      {
+        "startedDateTime": "2017-02-23T02:18:39.109Z",
+        "time": 39.9380000308156,
+        "request": {
+          "method": "POST",
+          "url": "http://localhost:3000/api/hars/587db70f3bbea32e008ed2cc/puml",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Origin",
+              "value": "http://localhost:3000"
+            },
+            {
+              "name": "Accept-Encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "Host",
+              "value": "localhost:3000"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.8"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Referer",
+              "value": "http://localhost:3000/hars/587db70f3bbea32e008ed2cc"
+            },
+            {
+              "name": "Cookie",
+              "value": "sessionId=s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Content-Length",
+              "value": "2686"
+            }
+          ],
+          "queryString": [],
+          "cookies": [
+            {
+              "name": "sessionId",
+              "value": "s%3A5pFzcvVUS6P2kknuwYtm8N04Ig33zsKu.ZblntYreBRGkEnqTcUKQN9g2WXTv3E2NktgVFGLaxVM",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": 594,
+          "bodySize": 2686,
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"_id\":\"587db70f3bbea32e008ed2cc\",\"user\":{\"_id\":\"587db6ca3bbea32e008ed2ca\",\"displayName\":\"greg bn\"},\"log\":{\"version\":\"1.2\",\"creator\":{\"name\":\"WebInspector\",\"version\":\"537.36\"},\"pages\":[],\"entries\":[{\"startedDateTime\":\"2017-01-17T06:17:27.992Z\",\"time\":58.42800000027637,\"request\":{\"method\":\"GET\",\"url\":\"http://localhost:3000/api/projects\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Accept-Encoding\",\"value\":\"gzip, deflate, sdch, br\"},{\"name\":\"Host\",\"value\":\"localhost:3000\"},{\"name\":\"Accept-Language\",\"value\":\"en-US,en;q=0.8\"},{\"name\":\"User-Agent\",\"value\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\"},{\"name\":\"Accept\",\"value\":\"application/json, text/plain, */*\"},{\"name\":\"Referer\",\"value\":\"http://localhost:3000/projects/587db6e43bbea32e008ed2cb\"},{\"name\":\"Cookie\",\"value\":\"_ga=GA1.1.871926037.1484628474; sessionId=s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"}],\"queryString\":[],\"cookies\":[{\"name\":\"_ga\",\"value\":\"GA1.1.871926037.1484628474\",\"expires\":null,\"httpOnly\":false,\"secure\":false},{\"name\":\"sessionId\",\"value\":\"s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\",\"expires\":null,\"httpOnly\":false,\"secure\":false}],\"headersSize\":514,\"bodySize\":0},\"response\":{\"status\":200,\"statusText\":\"OK\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Strict-Transport-Security\",\"value\":\"max-age=15778476; includeSubDomains\"},{\"name\":\"X-Content-Type-Options\",\"value\":\"nosniff\"},{\"name\":\"Date\",\"value\":\"Tue, 17 Jan 2017 06:17:28 GMT\"},{\"name\":\"X-Download-Options\",\"value\":\"noopen\"},{\"name\":\"X-Frame-Options\",\"value\":\"SAMEORIGIN\"},{\"name\":\"Content-Type\",\"value\":\"application/json; charset=utf-8\"},{\"name\":\"X-XSS-Protection\",\"value\":\"1; mode=block\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"},{\"name\":\"Vary\",\"value\":\"Accept-Encoding\"},{\"name\":\"Content-Length\",\"value\":\"188\"},{\"name\":\"ETag\",\"value\":\"W/\\\"bc-o9C6apBgHCqQWORVcF0PyQ\\\"\"}],\"cookies\":[],\"content\":{\"size\":188,\"mimeType\":\"application/json\",\"compression\":0,\"text\":\"[{\\\"_id\\\":\\\"587db6e43bbea32e008ed2cb\\\",\\\"user\\\":\\\"587db6ca3bbea32e008ed2ca\\\",\\\"__v\\\":0,\\\"hars\\\":[],\\\"description\\\":\\\"This is a test project.\\\",\\\"title\\\":\\\"Test Project\\\",\\\"created\\\":\\\"2017-01-17T06:17:08.528Z\\\"}]\"},\"redirectURL\":\"\",\"headersSize\":395,\"bodySize\":188,\"_transferSize\":583},\"timings\":{\"blocked\":1.48900000021968,\"dns\":-1,\"connect\":-1,\"send\":0.09099999988393015,\"wait\":18.60300000043939,\"receive\":38.244999999733366,\"ssl\":-1},\"serverIPAddress\":\"127.0.0.1\",\"connection\":\"31950\"}]},\"__v\":0,\"specs\":[],\"created\":\"2017-01-17T06:17:51.943Z\",\"name\":\"localhost.har\",\"isCurrentUserOwner\":true}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=15778476; includeSubDomains"
+            },
+            {
+              "name": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "name": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "name": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "name": "ETag",
+              "value": "W/\"ade-i8naN2HpkUGu3+90W/GHQA\""
+            },
+            {
+              "name": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "name": "Vary",
+              "value": "X-HTTP-Method-Override, Accept-Encoding"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "Date",
+              "value": "Thu, 23 Feb 2017 02:18:39 GMT"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "name": "X-XSS-Protection",
+              "value": "1; mode=block"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 2782,
+            "mimeType": "application/json",
+            "compression": 1394,
+            "text": "{\"puml\":\"UDfJ2YrEBL9mJ4_DAr5IqBLJKD9FBCZKBoZApqfDBYbMib98Joq9WF8qD1Muyl9BKXMACjCpIgmKK9HoeUa46uPak9M2aO61XW9CNW5e5W3TX2UH\",\"_id\":\"587db70f3bbea32e008ed2cc\",\"user\":{\"_id\":\"587db6ca3bbea32e008ed2ca\",\"displayName\":\"greg bn\"},\"log\":{\"version\":\"1.2\",\"creator\":{\"name\":\"WebInspector\",\"version\":\"537.36\"},\"pages\":[],\"entries\":[{\"startedDateTime\":\"2017-01-17T06:17:27.992Z\",\"time\":58.42800000027637,\"request\":{\"method\":\"GET\",\"url\":\"http://localhost:3000/api/projects\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Accept-Encoding\",\"value\":\"gzip, deflate, sdch, br\"},{\"name\":\"Host\",\"value\":\"localhost:3000\"},{\"name\":\"Accept-Language\",\"value\":\"en-US,en;q=0.8\"},{\"name\":\"User-Agent\",\"value\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\"},{\"name\":\"Accept\",\"value\":\"application/json, text/plain, */*\"},{\"name\":\"Referer\",\"value\":\"http://localhost:3000/projects/587db6e43bbea32e008ed2cb\"},{\"name\":\"Cookie\",\"value\":\"_ga=GA1.1.871926037.1484628474; sessionId=s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"}],\"queryString\":[],\"cookies\":[{\"name\":\"_ga\",\"value\":\"GA1.1.871926037.1484628474\",\"expires\":null,\"httpOnly\":false,\"secure\":false},{\"name\":\"sessionId\",\"value\":\"s%3A1qd5rDsmAHAPCJ7esY6k3eT_uJdliU_F.WxvqTZ1QOWwHl%2BxlwgSOEc5I3CKwrAkm1Cvs344M%2BbU\",\"expires\":null,\"httpOnly\":false,\"secure\":false}],\"headersSize\":514,\"bodySize\":0},\"response\":{\"status\":200,\"statusText\":\"OK\",\"httpVersion\":\"HTTP/1.1\",\"headers\":[{\"name\":\"Strict-Transport-Security\",\"value\":\"max-age=15778476; includeSubDomains\"},{\"name\":\"X-Content-Type-Options\",\"value\":\"nosniff\"},{\"name\":\"Date\",\"value\":\"Tue, 17 Jan 2017 06:17:28 GMT\"},{\"name\":\"X-Download-Options\",\"value\":\"noopen\"},{\"name\":\"X-Frame-Options\",\"value\":\"SAMEORIGIN\"},{\"name\":\"Content-Type\",\"value\":\"application/json; charset=utf-8\"},{\"name\":\"X-XSS-Protection\",\"value\":\"1; mode=block\"},{\"name\":\"Connection\",\"value\":\"keep-alive\"},{\"name\":\"Vary\",\"value\":\"Accept-Encoding\"},{\"name\":\"Content-Length\",\"value\":\"188\"},{\"name\":\"ETag\",\"value\":\"W/\\\"bc-o9C6apBgHCqQWORVcF0PyQ\\\"\"}],\"cookies\":[],\"content\":{\"size\":188,\"mimeType\":\"application/json\",\"compression\":0,\"text\":\"[{\\\"_id\\\":\\\"587db6e43bbea32e008ed2cb\\\",\\\"user\\\":\\\"587db6ca3bbea32e008ed2ca\\\",\\\"__v\\\":0,\\\"hars\\\":[],\\\"description\\\":\\\"This is a test project.\\\",\\\"title\\\":\\\"Test Project\\\",\\\"created\\\":\\\"2017-01-17T06:17:08.528Z\\\"}]\"},\"redirectURL\":\"\",\"headersSize\":395,\"bodySize\":188,\"_transferSize\":583},\"timings\":{\"blocked\":1.48900000021968,\"dns\":-1,\"connect\":-1,\"send\":0.09099999988393015,\"wait\":18.60300000043939,\"receive\":38.244999999733366,\"ssl\":-1},\"serverIPAddress\":\"127.0.0.1\",\"connection\":\"31950\"}]},\"__v\":0,\"specs\":[],\"created\":\"2017-01-17T06:17:51.943Z\",\"name\":\"localhost.har\"}"
+          },
+          "redirectURL": "",
+          "headersSize": 451,
+          "bodySize": 1388,
+          "_transferSize": 1839
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1.85500003863126,
+          "dns": -1,
+          "connect": -1,
+          "send": 0.16599998343736022,
+          "wait": 37.46899997349828,
+          "receive": 0.4480000352487039,
+          "ssl": -1
+        },
+        "serverIPAddress": "127.0.0.1",
+        "connection": "30753",
+        "pageref": "page_2"
+      }
+    ]
+  }
+}

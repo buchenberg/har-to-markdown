@@ -1,0 +1,26 @@
+{
+  "name": "har-to-markdown",
+  "version": "1.0.0",
+  "description": "HTTP Archive to Markdown conversion utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "keywords": [
+    "har",
+    "markdown",
+    "nodejs"
+  ],
+  "author": "Gregory Buchenberger",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.4",
+    "markdown-utils": "^0.7.3",
+    "stringbuilder": "0.0.11"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "tape": "^4.6.3"
+  }
+}
